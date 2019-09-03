@@ -1,0 +1,52 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"jest": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-const-assign": "warn",
+		"no-this-before-super": "warn",
+		"no-undef": "warn",
+		"no-continue": "off",
+		"no-unreachable": "warn",
+		"no-unused-vars": "warn",
+		"constructor-super": "warn",
+		"valid-typeof": "warn",
+		"linebreak-style": "off",
+		"no-tabs": "off",
+		"indent": ["error", "tab"],
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "never",
+				"objects": "never",
+				"imports": "always",
+				"exports": "always",
+				"functions": "never"
+			}
+		],
+		"quotes": [2, "single"],
+		"semi": ["error", "always"],
+		"react/jsx-indent": [
+			true,
+			"tab",
+			{ "checkAttributes": true, "indentLogicalExpressions": true }
+		],
+		"react/jsx-indent-props": [true, "tab"],
+		"react/jsx-closing-bracket-location": [
+			1,
+			{ "selfClosing": "props-aligned", "nonEmpty": "after-props" }
+		]
+	},
+	"parser": "babel-eslint",
+	"extends": "airbnb",
+	"plugins": ["react", "jsx-a11y", "import"]
+}
